@@ -1,0 +1,151 @@
+body {
+    background-color: darkgrey;
+    /* background-image: url("../images/init-BG.jpg"); */
+    background-image: url("../images/background_body.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: "Proza Libre", "Georgia", sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    /* color: #fff; */
+    /* color: darkgray; */
+    color: rgb(239, 213, 152);
+    float: left;
+    /* font-family: "Tangerine", serif; */
+    font-family: 'Cinzel Decorative', cursive;
+    /* font-size: 86px; */
+    font-size: 40px;
+    margin: 2%;
+    /* padding: 0; */
+    position: relative;
+    text-shadow: black -2px 3px 1px;
+    /* z-index: 20; */
+}
+
+section {
+    clear: both;
+    /* color: antiquewhite; */
+    /* color: rgb(247, 240, 212); */
+    color: #f7f0d4;
+    line-height: 35px;
+    margin: 0 7% 3% 7%;
+    padding: 4%;
+    position: relative;  
+    top: -18px;
+}
+
+.sectionBG {
+    /* background-color: #5A0019; */
+    background-color: rgb(144, 64, 65);
+    /* background-color: #904041; */
+    opacity: .90;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#qText {
+    position: relative;
+}
+.answer {
+	cursor: pointer;
+	margin: 5px;
+}
+
+#result {
+    background-color: #4a5241;
+    background-position: right top;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    color: antiquewhite;
+    display: none;
+    font-size: 30px;
+    height: 100%;
+    left: 0;
+    line-height: 42px;
+    opacity: .80;
+    padding: 8%;
+	position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+#result.correctResult {
+    background-image: url("../images/answer_correct.png");
+     background-size: 250px 250px;
+}
+#result.wrongResult {
+    background-image: url("../images/answer_wrong.png");
+    background-size: 230px 230px;
+}
+#result.timesUp {
+    background-image: url("../images/timer.png");
+     background-size: 230px 230px;
+}
+#result .gameOverText {
+    display: block;
+    font-size: smaller;
+    position: absolute;
+    bottom: 30px;
+    width: 85%;
+}
+button#newGame {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+.scoreboard {
+    float: left;
+    margin: 2%;
+    background-color: #c5bbac;
+    width: 20%;
+    padding: 15px 6px;
+    height: 52px;
+    box-sizing: border-box;
+    text-align: center;
+}
+#score {
+    font-size: small;
+    padding-top: 8px;
+}
+#choices {
+    display: none;
+}
+#choices ol {
+    position: relative;
+}
+button {    
+    display: block;
+    margin: auto;
+    padding: 2%;
+    font-size: 48px;
+    font-family: "Tangerine", serif;
+    margin-top: 4%;
+    background-color: #280207;
+    border-color: #666;
+    border-radius: 7px;
+    color: white;
+}
+/* responsive styles! */
+@media screen and (max-width: 750px) {
+    #timer {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 65px;
+    }
+    section {
+        top: 0;
+    }
+}
+@media screen and (max-width: 550px) {
+    #score {
+        clear: both;
+    }
+    .scoreboard {
+        width: 35%;
+    }
+}
